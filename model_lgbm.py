@@ -18,3 +18,6 @@ params = {
 
 if __name__ == '__main__':
     pass
+    df_for_submission = pd.DataFrame(data=y_pred, index=prediction_data.index, columns=columns_name)
+    # set index name
+    df_for_submission.index.name = 'Id'
